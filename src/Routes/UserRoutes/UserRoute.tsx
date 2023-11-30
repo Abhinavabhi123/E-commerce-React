@@ -1,9 +1,10 @@
-import React from 'react'
+import { Routes, Route } from "react-router-dom";
+import Home from "../../Pages/User/Home";
 
 export default function UserRoute() {
   return (
-    <div className='bg-red-600 w-screen h-20'>
-      <h1 className='text-red-500'>hello</h1>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+  );
 }

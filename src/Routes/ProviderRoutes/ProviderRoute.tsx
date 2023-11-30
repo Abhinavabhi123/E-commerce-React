@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function AdminRoute() {
+export default function ProviderRoute() {
   return (
     <div>
       
