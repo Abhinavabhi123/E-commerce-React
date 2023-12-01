@@ -1,18 +1,19 @@
 import Logo from "../../../assets/logo.svg";
-import { MdAttachMoney } from "react-icons/md";
+import { MdAttachMoney,MdPhoneInTalk,MdOutlineShoppingCart   } from "react-icons/md";
+import { IoPersonSharp } from "react-icons/io5";
 import { NavItem } from "../../../Types/type";
 import NavCard from "../Cards/NavCard";
 
 const navList:NavItem[] = [
   { Icon:MdAttachMoney, text: "Payment" },
-  { Icon:MdAttachMoney, text: "hello" },
-  { Icon:MdAttachMoney, text: "hello" },
-  { Icon:MdAttachMoney, text: "hello" },
+  { Icon:MdPhoneInTalk , text: "hello" },
+  { Icon:MdOutlineShoppingCart , text: "hello" },
+  { Icon:IoPersonSharp, text: "hello" },
 ];
 
 export default function NavBar() {
   return (
-    <div className="w-screen md:h-16 bg-green-500 flex flex-col md:flex-row items-center md:justify-between px-10 h-40 py-5 gap-3">
+    <div className="w-screen md:h-16 bg-transparent flex flex-col md:flex-row items-center md:justify-between px-10 h-40 py-5 gap-3">
       <div className="inline-flex items-center gap-2">
         <img src={Logo} alt="Logo" />
         <h1>Logo</h1>
