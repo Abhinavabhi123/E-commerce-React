@@ -47,8 +47,8 @@ export default function HomeSlider() {
   }
 
   return (
-    <div className="w-screen h-[30rem] bg-transparent flex justify-center items-center">
-      <div className="w-[90%] h-[90%] max-w-[1500px] rounded-lg group relative">
+    <div className="w-screen h-[15rem] md:h-[30rem] bg-transparent flex justify-center items-center z-0">
+      <div className="w-[90%] h-[90%] max-w-[1500px] rounded-lg group relative transition-all ">
         <img
           className="w-full h-full object-cover rounded-lg "
           src={sliderItem[sliderImage].image}

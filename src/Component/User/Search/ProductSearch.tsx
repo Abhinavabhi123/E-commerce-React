@@ -7,10 +7,10 @@ export default function ProductSearch() {
         
     }
   return (
-    <div className="flex w-full h-full">
-      <form className="w-full h-full flex" onSubmit={formSubmit}>
-        <input className=" w-[75%] focus:outline-none h-full ps-5 bg-white ml-16 rounded-md border-2 border-black" placeholder="Search Product"/>
-        <button className="w-20 h-full bg-black rounded-md text-white">Search</button>
+    <div className="flex w-full h-full ">
+      <form className="w-full md:w-[75%] h-full flex" onSubmit={formSubmit}>
+        <input className="  text-xs md:text-base ps-1 w-full focus:outline-none h-full md:ps-5 bg-white ml-16 rounded-md border-2 border-black" placeholder="Search Product"/>
+        <button className="w-20 text-xs  h-full bg-black rounded-md text-white">Search</button>
       </form>
     </div>
   );
