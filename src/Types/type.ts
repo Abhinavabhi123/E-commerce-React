@@ -1,3 +1,4 @@
+// import {FormEventHandler} from "react"
 export type NavItem = {
   Icon: React.FC;
   text?: string;
@@ -24,3 +25,10 @@ export interface AdminAction extends userAction{}
 export type AdminReducerAction=
 |{type:"addAdminDetails";payload?:string|number}
 |{type:"AdminLogout";}
+
+export type FormType= React.FormEvent<HTMLFormElement>
+
+export interface AdminLoginData{
+  email:string;
+  password:string
+}

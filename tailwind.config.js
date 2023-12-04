@@ -12,6 +12,9 @@ export default {
         black: "#000",
       },
     },
+    backgroundImage:{
+      adminLogin:"url('./public/GDPR-cuate.png')"
+    }
   },
   plugins: [],
 };

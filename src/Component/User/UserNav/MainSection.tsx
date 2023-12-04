@@ -14,10 +14,10 @@ export default function MainSection() {
   }
 
   return (
-    <div className="w-screen h-24 bg-primary flex justify-center items-center">
+    <div className="w-screen h-16 md:h-24 bg-primary flex justify-center items-center">
       <div className="w-[90%]  h-[90%] flex items-center justify-between relative">
         <div
-          className="relative md:w-32 md:h-[50%] h-[30px] text-xs w-[50px] md:text-base bg-secondary rounded-md flex justify-center items-center gap-2 cursor-pointer"
+          className="relative md:w-32  md:h-[50%] h-[30px] text-xs w-[50px] md:text-base bg-secondary rounded-md flex justify-center items-center gap-2 cursor-pointer"
           onClick={openList}
         >
           <IoMdMenu />
@@ -36,11 +36,11 @@ export default function MainSection() {
         <div className="w-[100%]  h-[30px] md:h-[50%]">
           <ProductSearch />
         </div>
-        <div className="flex md:gap-10 gap-4  items-center max-[1002px]:justify-evenly ms-5 md:ms-0">
+        <div className="flex md:gap-10 gap-2  items-center max-[1002px]:justify-evenly ms-5 md:ms-0">
           {items.map((item, i) => (
             <div
               key={i}
-              className="md:w-14 w-8 md:h-14 text-white h-8 rounded-md bg-slate-600 flex justify-center items-center hover:text-violet-500"
+              className="md:w-12 w-8 md:h-12 text-white text-xs md:text-base h-8 rounded-md bg-slate-600 flex justify-center items-center hover:text-violet-500"
             >
               <item.Icon  />
             </div>

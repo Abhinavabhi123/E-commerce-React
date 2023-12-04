@@ -7,7 +7,7 @@ export default function NavCard({Icon,text}:NavItem) {
       <div className="w-10 h-10 bg-white rounded-md flex justify-center items-center drop-shadow-md">
        <Icon/>
       </div>
-      <p className="text-xs">{text}</p>
+      <p className="text-xs max-[451px]:hidden md:block">{text}</p>
     </div>
   );
 }

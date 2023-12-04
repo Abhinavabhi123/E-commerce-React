@@ -18,7 +18,7 @@ export default function NavBar() {
         <img src={Logo} alt="Logo" />
         <h1>Logo</h1>
       </div>
-      <div className="flex items-center gap-1">
+      <div className="flex items-center md:gap-1 justify-center gap-3">
         {navList.map((item,i) => (
           <NavCard Icon={item.Icon} text={item.text}  key={i} />
         ))}

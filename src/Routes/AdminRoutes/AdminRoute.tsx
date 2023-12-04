@@ -4,7 +4,7 @@ import AdminLogin from "../../Pages/Admin/AdminLogin"
 export default function AdminRoute() {
   return (
     <Routes>
-        <Route path="/" element={<AdminLogin/>}/>
+        <Route path="/login" element={<AdminLogin/>}/>
     </Routes>
   )
 }

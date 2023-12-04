@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
 
-
 const sliderItem = [
   {
     image:
@@ -35,27 +34,27 @@ export default function HomeSlider() {
     const newIndex: number = currentIndex ? 0 : sliderImage + 1;
     setSliderImage(newIndex);
   }
-  setInterval(()=>{
-    if(sliderImage===sliderItem.length-1){
-      setSliderImage(0)
-      return
-    }
-    setSliderImage(sliderImage+1)
-  },5000)
-  function changeSlide(index:number){
-    setSliderImage(index)
+  // setInterval(() => {
+  //   if (sliderImage === sliderItem.length - 1) {
+  //     setSliderImage(0);
+  //   } else {
+  //     setSliderImage(sliderImage + 1);
+  //   }
+  // }, 5000);
+  function changeSlide(index: number) {
+    setSliderImage(index);
   }
 
   return (
     <div className="w-screen h-[15rem] md:h-[30rem] bg-transparent flex justify-center items-center z-0">
-      <div className="w-[90%] h-[90%] max-w-[1500px] rounded-lg group relative transition-all ">
+      <div className="w-[80%] h-[90%] max-w-[1500px] rounded-lg group relative transition-all ">
         <img
           className="w-full h-full object-cover rounded-lg "
           src={sliderItem[sliderImage].image}
           alt="slider"
         />
         <div className="hidden absolute group-hover:flex w-full items-center justify-between px-5 top-1/2 -translate-y-1/2">
-          <button onClick={PrevImage}  className="text-white opacity-50">
+          <button onClick={PrevImage} className="text-white opacity-50">
             <FaChevronCircleLeft size={30} />
           </button>
           <button onClick={NextImage} className="text-white opacity-50">
@@ -63,13 +62,13 @@ export default function HomeSlider() {
           </button>
         </div>
         <div className="group-hover:flex absolute hidden w-full justify-center mt-[-20px] gap-1">
-          {
-            sliderItem.map((item, index)=>(
-              <div className="w-2 h-2  rounded-full bg-white cursor-pointer" key={index} onClick={()=>changeSlide(index)}>
-
-              </div>
-            ))
-          }
+          {sliderItem.map((item, index) => (
+            <div
+              className="w-2 h-2  rounded-full bg-white cursor-pointer"
+              key={index}
+              onClick={() => changeSlide(index)}
+            ></div>
+          ))}
         </div>
       </div>
     </div>
